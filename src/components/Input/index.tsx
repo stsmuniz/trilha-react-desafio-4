@@ -20,7 +20,7 @@ const Input = ({ control, name, errorMessage, ...rest }: IInputProps) => {
           )}
         />
       </InputContainer>
-      {errorMessage ? <ErrorMessage>{errorMessage}</ErrorMessage> : null}
+      {errorMessage && <ErrorMessage>{errorMessage}</ErrorMessage>}
     </>
   );
 };
